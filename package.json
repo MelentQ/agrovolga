@@ -1,11 +1,11 @@
 {
-  "name": "handlebars-boilerplate",
-  "version": "4.0.0",
-  "description": "Modern boilerplate with Gulp and Webpack",
+  "name": "agrovolga",
+  "version": "1.0.0",
+  "description": "agrovolga",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MelentQ/handlebars-boilerplate.git"
+    "url": "git+https://https://github.com/MelentQ/agrovolga.git"
   },
   "main": "main.js",
   "scripts": {
