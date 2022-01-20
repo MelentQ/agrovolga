@@ -1,3 +1,73 @@
 {
-    "title": "Главная страница"
+    "title": "Главная",
+    "menu": [
+        {
+            "name": "Главная",
+            "link": "/",
+            "active": ""
+        },
+        {
+            "name": "О выставке",
+            "link": "/",
+            "active": ""
+        },
+        {
+            "name": "Участникам",
+            "link": "/",
+            "active": ""
+        },
+        {
+            "name": "Посетителям",
+            "link": "/",
+            "active": ""
+        },
+        {
+            "name": "Медиа",
+            "link": "#",
+            "active": ""
+        }
+    ],
+    "socials": [
+        {
+            "name": "YouTube",
+            "icon": "#youtube",
+            "link": "#"
+        },
+        {
+            "name": "Instagram",
+            "icon": "#instagram",
+            "link": "#"
+        },
+        {
+            "name": "VK",
+            "icon": "#vk",
+            "link": "#"
+        },
+        {
+            "name": "Telegram",
+            "icon": "#telegram",
+            "link": "#"
+        }
+    ],
+    "introSlides": [
+        {
+            "title": "Посмотрите, как проходила Агроволга 2021",
+            "video": "Ik4tR3i6ALk"
+        },
+        {
+            "previewPic": "img/content/index/intro/slider/slide-2.png",
+            "previewPicWebP": "img/content/index/intro/slider/slide-2.webp",
+            "title": "Узнайте больше о выставке Агроволга 2022 →",
+            "video": ""
+        },
+        {
+            "previewPic": "img/content/index/bg/bg-1.jpg",
+            "previewPicWebP": "img/content/index/bg/bg-1.webp",
+            "title": "Посмотрите, как проходила Агроволга 2021"
+        },
+        {
+            "title": "Узнайте больше о выставке Агроволга 2022 →",
+            "video": "hA-TS5YTwI0"
+        }
+    ]
 }

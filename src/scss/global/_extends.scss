@@ -1,32 +1,41 @@
 // Заголовки
 %fs-h1 {
-  @include clamp(24, 56);
+  @include clamp(68, 104);
 }
 %fs-h2 {
-  @include clamp(22, 42);
+  @include clamp(54, 68);
 }
 %fs-h3 {
-  @include clamp(20, 32);
+  @include clamp(44, 54);
 }
 %fs-h4 {
-  @include clamp(20, 24);
+  @include clamp(30, 44);
 }
 %fs-h5 {
-  @include clamp(18, 20);
+  @include clamp(24, 30);
+}
+%fs-h6 {
+  @include clamp(20, 24);
 }
 
 // Наборный текст
 %fs-t1 {
-  @include clamp(16, 18);
+  @include clamp(20, 24);
 }
 %fs-t2 {
-  @include clamp(14, 16);
+  @include clamp(18, 20);
 }
 %fs-t3 {
+  @include clamp(16, 18);
+}
+%fs-t4 {
+  @include clamp(14, 16);
+}
+%fs-t5 {
   @include clamp(12, 14);
 }
 
 // Подписи
 %fs-s1 {
-  @include clamp(10, 12);
+  @include clamp(8, 10);
 }

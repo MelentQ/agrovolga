@@ -1,5 +1,15 @@
-<header class="page-header">
-    <div class="container">
-        <h2>Header</h2>
+<header class="header js-first-block--header">
+    <div class="wide-container">
+        <div class="header__inner">
+            {{>logo}}
+            <div class="header__links">
+                {{>menu}}
+                <a class="header__link" href="/">COVID-19</a>
+                <div class="header__buttons">
+                    <a class="button button--filled" href="#">Забронировать стенд</a>
+                    <button class="button" type="button">Получить билет</button>
+                </div>
+            </div>
+        </div>
     </div>
 </header>

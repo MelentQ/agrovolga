@@ -1,20 +1,25 @@
 .menu {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
 
   &__list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 1rem;
+    gap: 3rem;
+    row-gap: 1rem;
   }
 
   &__item {
-
+    flex-shrink: 0;
   }
 
   &__link {
     transition: color $base-transition-time $base-transition-easing, border-bottom-color $base-transition-time $base-transition-easing;
 
+    &:focus-visible,
     &:hover {
       color: var(--primary-color);
     }
@@ -25,6 +30,23 @@
 
     &.active:hover {
       border-bottom-color: var(--primary-color);
+    }
+  }
+
+  &__burger {
+    svg {
+      width: 3.2rem;
+      height: 1.6rem;
+
+      fill: white;
+      transition: fill $base-transition-time $base-transition-easing;
+    }
+
+    &:focus-visible,
+    &:hover {
+      svg {
+        fill: var(--primary-color);
+      }
     }
   }
 }

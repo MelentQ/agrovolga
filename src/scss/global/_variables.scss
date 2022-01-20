@@ -1,8 +1,16 @@
 :root {
-  --max-container-width: 140rem;
-  --content-padding: 6rem;
-  --primary-color: #13b17c;
+  --max-container-width: 130rem;
+  --content-padding: 19rem;
+  --wide-content-padding: 3rem;
+  --primary-color: #C2D644;
+  --primary-color-2: #70C7BF;
+  --primary-color-3: #4DA1CF;
   --text-color: black;
+
+  --icon-color: white; // Переназначается на ховер
+  --play-button-bg-color: white; // Переназначается на ховер
+  --play-button-rectangle-color: var(--primary-color); // Переназначается на ховер
+  --intro-slide-padding-bottom: 0%; // fix.js
 }
 
 $minWidth: 375;
@@ -10,6 +18,9 @@ $maxWidth: 1680; // Ширина макета
 $base-transition-time: 0.3s;
 $base-transition-easing: ease;
 
+$button-border: 1px;
+
 $overlay-color: rgba(0, 0, 0, 0.5);
 
 $modal-bg-color: white;
+$main-gradient: linear-gradient(90deg, var(--primary-color-3) 0%, var(--primary-color-2) 30%, var(--primary-color) 100%);

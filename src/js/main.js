@@ -16,6 +16,12 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import editableTextContainer from './custom/editableTextContainer';
+import set100vh from './custom/set100vh';
+import setFirstBlokPadding from './custom/setFirstBlockPadding';
+import initSliders from './custom/initSliders';
+import fix from './custom/fix';
+import initModals from './custom/initModals';
+import initAnimations from './custom/initAnimations';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // custom
 
     editableTextContainer();
+    set100vh();
+    setFirstBlokPadding();
+    initSliders();
+    fix();
+    initModals();
+    initAnimations();
 });
 
 document.addEventListener('lazyloaded', () => {

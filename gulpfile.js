@@ -35,6 +35,22 @@ gulp.task('sprite', function() {
                     symbol: {
                         sprite: '../sprite.hbs'
                     }
+                },
+                transform: [
+                    {svgo: {
+                        plugins: [
+                            { removeViewBox: false },
+                            { removeUselessStrokeAndFill: false },
+                            { cleanupIDs: false },
+                            { mergePaths: false },
+                            { removeUnknownsAndDefaults: false }
+                        ]
+                    }}
+                ],
+                svg: {
+                    xmlDeclaration: false,
+                    doctypeDeclaration: false,
+                    namespaceIDs: false
                 }
             })
         )

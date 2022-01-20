@@ -1,8 +1,7 @@
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/choices.js/public/assets/styles/choices';
 @import '../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone';
-// @import '../../node_modules/plyr/dist/plyr';
-// todo: решить баг с plyr.css "Error: -7px and -2 are incompatible."
+@import '../libs/hystmodal/hystmodal.min.scss';
 
 .swiper-slide {
     box-sizing: border-box;
@@ -18,4 +17,8 @@
 .lazyloaded {
     opacity: 1;
     transition: opacity 300ms;
+}
+
+.hystmodal__close:focus {
+    outline: none;
 }

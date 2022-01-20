@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Russia';
+    src: url('Russia/Russia.eot');
+    src: url('Russia/Russia.eot?#iefix') format('embedded-opentype'),
+        url('Russia/Russia.woff2') format('woff2'),
+        url('Russia/Russia.woff') format('woff'),
+        url('Russia/Russia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Russia';
+    src: url('Russia/Russia-BlackItalic.eot');
+    src: url('Russia/Russia-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Russia/Russia-BlackItalic.woff2') format('woff2'),
+        url('Russia/Russia-BlackItalic.woff') format('woff'),
+        url('Russia/Russia-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Russia';
+    src: url('Russia/Russia-Black.eot');
+    src: url('Russia/Russia-Black.eot?#iefix') format('embedded-opentype'),
+        url('Russia/Russia-Black.woff2') format('woff2'),
+        url('Russia/Russia-Black.woff') format('woff'),
+        url('Russia/Russia-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Russia';
+    src: url('Russia/Russia-Bold.eot');
+    src: url('Russia/Russia-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Russia/Russia-Bold.woff2') format('woff2'),
+        url('Russia/Russia-Bold.woff') format('woff'),
+        url('Russia/Russia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Bold.eot');
+    src: url('Jeco/Jeko-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Bold.woff2') format('woff2'),
+        url('Jeco/Jeko-Bold.woff') format('woff'),
+        url('Jeco/Jeko-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-MediumItalic.eot');
+    src: url('Jeco/Jeko-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-MediumItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-MediumItalic.woff') format('woff'),
+        url('Jeco/Jeko-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-ExtraBoldItalic.eot');
+    src: url('Jeco/Jeko-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-ExtraBoldItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-ExtraBoldItalic.woff') format('woff'),
+        url('Jeco/Jeko-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Regular.eot');
+    src: url('Jeco/Jeko-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Regular.woff2') format('woff2'),
+        url('Jeco/Jeko-Regular.woff') format('woff'),
+        url('Jeco/Jeko-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-LightItalic.eot');
+    src: url('Jeco/Jeko-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-LightItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-LightItalic.woff') format('woff'),
+        url('Jeco/Jeko-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-ExtraLightItalic.eot');
+    src: url('Jeco/Jeko-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-ExtraLightItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-ExtraLightItalic.woff') format('woff'),
+        url('Jeco/Jeko-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JekoItalicVariable';
+    src: url('Jeco/JekoItalicVariable.eot');
+    src: url('Jeco/JekoItalicVariable.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/JekoItalicVariable.woff2') format('woff2'),
+        url('Jeco/JekoItalicVariable.woff') format('woff'),
+        url('Jeco/JekoItalicVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-BoldItalic.eot');
+    src: url('Jeco/Jeko-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-BoldItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-BoldItalic.woff') format('woff'),
+        url('Jeco/Jeko-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Black.eot');
+    src: url('Jeco/Jeko-Black.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Black.woff2') format('woff2'),
+        url('Jeco/Jeko-Black.woff') format('woff'),
+        url('Jeco/Jeko-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-ExtraBold.eot');
+    src: url('Jeco/Jeko-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-ExtraBold.woff2') format('woff2'),
+        url('Jeco/Jeko-ExtraBold.woff') format('woff'),
+        url('Jeco/Jeko-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-BlackItalic.eot');
+    src: url('Jeco/Jeko-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-BlackItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-BlackItalic.woff') format('woff'),
+        url('Jeco/Jeko-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Medium.eot');
+    src: url('Jeco/Jeko-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Medium.woff2') format('woff2'),
+        url('Jeco/Jeko-Medium.woff') format('woff'),
+        url('Jeco/Jeko-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-ExtraLight.eot');
+    src: url('Jeco/Jeko-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-ExtraLight.woff2') format('woff2'),
+        url('Jeco/Jeko-ExtraLight.woff') format('woff'),
+        url('Jeco/Jeko-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Light.eot');
+    src: url('Jeco/Jeko-Light.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Light.woff2') format('woff2'),
+        url('Jeco/Jeko-Light.woff') format('woff'),
+        url('Jeco/Jeko-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko-RegularItalic';
+    src: url('Jeco/Jeko-RegularItalic.eot');
+    src: url('Jeco/Jeko-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-RegularItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-RegularItalic.woff') format('woff'),
+        url('Jeco/Jeko-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-SemiBold.eot');
+    src: url('Jeco/Jeko-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-SemiBold.woff2') format('woff2'),
+        url('Jeco/Jeko-SemiBold.woff') format('woff'),
+        url('Jeco/Jeko-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-ThinItalic.eot');
+    src: url('Jeco/Jeko-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-ThinItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-ThinItalic.woff') format('woff'),
+        url('Jeco/Jeko-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-Thin.eot');
+    src: url('Jeco/Jeko-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-Thin.woff2') format('woff2'),
+        url('Jeco/Jeko-Thin.woff') format('woff'),
+        url('Jeco/Jeko-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jeko';
+    src: url('Jeco/Jeko-SemiBoldItalic.eot');
+    src: url('Jeco/Jeko-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/Jeko-SemiBoldItalic.woff2') format('woff2'),
+        url('Jeco/Jeko-SemiBoldItalic.woff') format('woff'),
+        url('Jeco/Jeko-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JekoVariable';
+    src: url('Jeco/JekoVariable.eot');
+    src: url('Jeco/JekoVariable.eot?#iefix') format('embedded-opentype'),
+        url('Jeco/JekoVariable.woff2') format('woff2'),
+        url('Jeco/JekoVariable.woff') format('woff'),
+        url('Jeco/JekoVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

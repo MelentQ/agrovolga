@@ -1,0 +1,52 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  width: 100%;
+  padding-top: 2.4rem;
+
+  color: white;
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 3.4rem;
+  }
+
+  &__links {
+    flex: 1 1 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @extend %fs-t3;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__link {
+    flex-shrink: 0;
+    
+    transition: color $base-transition-time $base-transition-easing;
+
+    &:focus-visible,
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 1.6rem;
+  }
+}

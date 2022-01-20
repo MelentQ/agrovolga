@@ -1,14 +1,24 @@
 .socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 3rem;
 
   &__item {
     
   }
 
   &__item-link {
+    display: block;
+    
+    opacity: 0.3;
+    transition: opacity $base-transition-time $base-transition-easing;
 
+    &:focus-visible,
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus-visible svg,
     &:hover svg {
       fill: var(--primary-color);
     }
@@ -16,7 +26,6 @@
     svg {
       width: 2rem;
       height: 2rem;
-
       transition: fill $base-transition-time $base-transition-easing;
     }
   }

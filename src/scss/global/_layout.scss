@@ -9,7 +9,41 @@
     }
 }
 
+.wide-container {
+    width: 100%;
+    max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+    margin: 0 auto;
+    padding: 0 var(--wide-content-padding);
+    @supports (width: max(20vw, 100px)) {
+        padding-left: max(env(safe-area-inset-left, 1.4rem), var(--wide-content-padding));
+        padding-right: max(env(safe-area-inset-right, 1.4rem), var(--wide-content-padding));
+    }
+}
+
+.container__bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    width: 100%;
+    height: 100%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
 .page-content {
+    position: relative;
+    
     flex-grow: 1;
     display: flex;
     flex-direction: column;

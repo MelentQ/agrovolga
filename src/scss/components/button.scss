@@ -1,0 +1,44 @@
+// todo: добавить стилизацию ховеров
+.button {
+  display: block;
+
+  width: fit-content;
+  padding: 1.2rem 1.8rem;
+
+  border: $button-border solid white;
+  border-radius: 0.5rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  @include clamp(12, 15);
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  line-height: 1.25;
+
+  user-select: none;
+
+  color: white;
+
+  transition: color $base-transition-time $base-transition-easing, border-color $base-transition-time $base-transition-easing;
+
+  &:focus-visible,
+  &:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  &--filled {
+    padding: calc(1.2rem + $button-border) calc(1.8rem + $button-border);
+    background: $main-gradient;
+    background-size: 200% 200%;
+    border: none;
+
+    transition: background-position $base-transition-time $base-transition-easing;
+
+    &:focus-visible,
+    &:hover {
+      background-position:100% 200%;
+      color: white;
+    }
+  }
+}

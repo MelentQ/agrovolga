@@ -1,0 +1,113 @@
+// Куски SVG для кнопок
+
+#slider-next-arr {
+  fill: var(--icon-color);
+
+  transition: fill $base-transition-time $base-transition-easing;
+}
+
+#slider-next-circles {
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+
+#slider-next-circle {
+  opacity: 0.5;
+  
+  stroke: var(--icon-color);
+  fill: none;
+
+  transition: stroke $base-transition-time $base-transition-easing;
+}
+
+#slider-next-line {
+  stroke: white;
+  fill: none;
+
+  transition: stroke $base-transition-time $base-transition-easing;
+
+  stroke-dasharray: 125.6;
+  stroke-dashoffset: 125.6;
+  // animation: circleFilling 10s linear infinite reverse;
+}
+
+#slider-prev-arr {
+  fill: var(--icon-color);
+
+  transition: fill $base-transition-time $base-transition-easing;
+}
+
+#slider-prev-circle {
+  transform-origin: center;
+  transform: rotate(-90deg);
+
+  stroke: var(--icon-color);
+  fill: none;
+
+  transition: stroke $base-transition-time $base-transition-easing;
+}
+
+// Анимация загрузки
+
+@keyframes circleFilling {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 125.6;
+  }
+}
+
+.slider {
+
+  &__wrapper {
+  }
+
+  &__slide {
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.4rem;
+
+    &--vertical {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+
+    transition: opacity $base-transition-time $base-transition-easing;
+    
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &:focus-visible,
+    &:hover {
+      --icon-color: var(--primary-color);
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+
+    &.swiper-button-disabled:focus-visible,
+    &.swiper-button-disabled:hover {
+      --icon-color: white;
+    }
+
+    &--prev {
+
+    }
+
+    &--next {
+      
+    }
+  }
+}

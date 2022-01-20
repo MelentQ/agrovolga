@@ -1,5 +1,6 @@
+@import '../assets/fonts/fonts.css';
+
 @import './global/variables';
-@import './global/fonts';
 @import './global/vendor';
 @import './global/mixins';
 @import './global/extends';
@@ -13,7 +14,6 @@
 @import './components/logo';
 @import './components/menu';
 @import './components/modal';
-
-
-
-
+@import './components/intro';
+@import './components/button';
+@import './components/slider';
