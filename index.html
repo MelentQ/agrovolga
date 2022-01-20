@@ -299,8 +299,12 @@
             <div class="ie-placeholder">
                 <div class="ie-placeholder__message">Извините, ваш браузер не поддерживается</div>
             </div>
-            <script src="https://www.youtube.com/iframe_api"></script>
             <script>
+                const tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                const firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
                 function onYouTubeIframeAPIReady() {
                     const players = Array.from(document.querySelectorAll('.js-youtube-player'));
                     players.forEach(playerElement => {
