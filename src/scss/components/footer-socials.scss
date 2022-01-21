@@ -1,0 +1,86 @@
+.footer-socilas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.4rem;
+
+  margin-top: 4rem;
+
+  &__item {
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4.8rem;
+    height: 4.8rem;
+
+    border-radius: 50%;
+
+    transition: background-color $base-transition-time $base-transition-easing;
+
+    &--youtube {
+      background-color: rgba(214, 86, 68, 1);
+
+      svg {
+        width: 1.9rem;
+        height: 1.2rem;
+        max-width: unset;
+        max-height: unset;
+      }
+    }
+
+    &--instagram {
+      background-color: rgba(225, 134, 247, 1);
+
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        max-width: unset;
+        max-height: unset;
+      }
+    }
+
+    &--vk {
+      background-color: rgba(0, 119, 255, 1);
+
+      svg {
+        width: 2.2rem;
+        height: 1.2rem;
+        max-width: unset;
+        max-height: unset;
+      }
+    }
+
+    &--telegram {
+      background-color: rgba(83, 198, 254, 1);
+
+      svg {
+        width: 1.8rem;
+        height: 1.6rem;
+        max-width: unset;
+        max-height: unset;
+        margin-right: 1px;
+      }
+    }
+
+    svg {
+      max-width: 40%;
+      max-height: 40%;
+
+      fill: white;
+      transition: fill $base-transition-time $base-transition-easing;
+    }
+
+    &:focus-visible,
+    &:hover {
+      background-color: rgba(255,255,255,0);
+
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+}

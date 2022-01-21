@@ -6,13 +6,16 @@
 @import './global/extends';
 @import './global/global';
 @import './global/layout';
+@import './global/animations';
 
 @import './components/header';
-@import './components/footer';
-@import './components/accordion';
-@import './components/socials';
 @import './components/logo';
 @import './components/menu';
+@import './components/footer';
+@import './components/footer-menu';
+@import './components/footer-socials';
+@import './components/accordion';
+@import './components/socials';
 @import './components/modal';
 @import './components/intro';
 @import './components/button';

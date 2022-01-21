@@ -1,0 +1,45 @@
+{{#if footerMenus}}
+
+{{#each footerMenus}}
+<div class="footer-menu">
+  <h3 class="footer-menu__title">{{this.name}}</h3>
+  <nav class="footer-menu__nav">
+    <ul class="footer-menu__list">
+      {{#each this.links}}
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="{{this.link}}">{{this.name}}</a>
+      </li>
+      {{/each}}
+    </ul>
+
+    {{#if this.socials}}
+    {{>footer-socials}}
+    {{/if}}
+
+  </nav>
+</div>
+{{/each}}
+
+{{else}}
+<pre>
+  Добавить в файл json:
+  "footerMenus": [
+      {
+          "name": "",
+          "links": [
+              {
+                  "name": "",
+                  "link": ""
+              }
+          ],
+          "socials": [
+              {
+                  "name": "",
+                  "icon": "",
+                  "link": ""
+              }
+          ]
+      }
+  ]
+</pre>
+{{/if}}

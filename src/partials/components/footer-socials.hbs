@@ -1,0 +1,9 @@
+<ul class="footer-socilas">
+  {{#each socials}}
+  <li class="footer-socilas__item">
+    <a class="footer-socilas__link footer-socilas__link--{{this.icon}}" href="{{this.link}}" title="{{this.name}}" target="_blank">
+      <svg><use xlink:href="#{{this.icon}}"></svg>
+    </a>
+  </li>
+  {{/each}}
+</ul>

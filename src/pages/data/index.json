@@ -30,22 +30,22 @@
     "socials": [
         {
             "name": "YouTube",
-            "icon": "#youtube",
+            "icon": "youtube",
             "link": "#"
         },
         {
             "name": "Instagram",
-            "icon": "#instagram",
+            "icon": "instagram",
             "link": "#"
         },
         {
             "name": "VK",
-            "icon": "#vk",
+            "icon": "vk",
             "link": "#"
         },
         {
             "name": "Telegram",
-            "icon": "#telegram",
+            "icon": "telegram",
             "link": "#"
         }
     ],
@@ -68,6 +68,142 @@
         {
             "title": "Узнайте больше о выставке Агроволга 2022 →",
             "video": "hA-TS5YTwI0"
+        }
+    ],
+    "footerMenus": [
+        {
+            "name": "О выставке",
+            "links": [
+                {
+                    "name": "Деловая программа",
+                    "link": "#"
+                },
+                {
+                    "name": "Презентация выставки",
+                    "link": "#"
+                },
+                {
+                    "name": "Схема выставки",
+                    "link": "#"
+                },
+                {
+                    "name": "Спонсоры и партнёры",
+                    "link": "#"
+                },
+                {
+                    "name": "Каталог участников",
+                    "link": "#"
+                },
+                {
+                    "name": "Организатор",
+                    "link": "#"
+                },
+                {
+                    "name": "Место и время",
+                    "link": "#"
+                },
+                {
+                    "name": "Экспоплан",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Экспонентам",
+            "links": [
+                {
+                    "name": "Забронировать стенд",
+                    "link": "#"
+                },
+                {
+                    "name": "Форматы участия",
+                    "link": "#"
+                },
+                {
+                    "name": "Рекламные возможности",
+                    "link": "#"
+                },
+                {
+                    "name": "Как добраться",
+                    "link": "#"
+                },
+                {
+                    "name": "Гостиницы",
+                    "link": "#"
+                },
+                {
+                    "name": "Экскурсии",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Посетителям",
+            "links": [
+                {
+                    "name": "Получить билет",
+                    "link": "#"
+                },
+                {
+                    "name": "Каталог участников",
+                    "link": "#"
+                },
+                {
+                    "name": "Как добраться",
+                    "link": "#"
+                },
+                {
+                    "name": "Гостиницы",
+                    "link": "#"
+                },
+                {
+                    "name": "Экскурсии",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "Медиа",
+            "links": [
+                {
+                    "name": "Новости",
+                    "link": "#"
+                },
+                {
+                    "name": "Пост-релиз 2021",
+                    "link": "#"
+                },
+                {
+                    "name": "Фото и видео",
+                    "link": "#"
+                },
+                {
+                    "name": "Аккредитация СМИ",
+                    "link": "#"
+                }
+            ],
+            "socials": [
+                {
+                    "name": "YouTube",
+                    "icon": "youtube",
+                    "link": "#"
+                },
+                {
+                    "name": "Instagram",
+                    "icon": "instagram",
+                    "link": "#"
+                },
+                {
+                    "name": "VK",
+                    "icon": "vk",
+                    "link": "#"
+                },
+                {
+                    "name": "Telegram",
+                    "icon": "telegram",
+                    "link": "#"
+                }
+            ]
         }
     ]
 }

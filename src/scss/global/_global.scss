@@ -217,3 +217,8 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     background-color: transparent;
 }
+
+iframe,
+iframe * {
+    user-select: none;
+}

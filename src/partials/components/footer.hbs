@@ -1,7 +1,12 @@
-<footer class="page-footer">
-    <div class="container">
-        <h2>
-            Footer
-        </h2>
+<footer class="footer">
+    <div class="container footer__inner">
+        {{>footer-menus}}
+    </div>
+    <div class="container footer__copyright">
+        <span class="footer__copyright-text">© АГРОВОЛГА 2022</span>
+        <a class="footer__made-by" href="https://markweber.ru/">
+            <span class="footer__made-by-label">Разработка сайта</span>
+            <svg><use xlink:href="#mark-weber"></svg>
+        </a>
     </div>
 </footer>

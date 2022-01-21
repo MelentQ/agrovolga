@@ -1,0 +1,34 @@
+.footer-menu {
+  @extend %fs-t5;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  line-height: 1.2;
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    color: var(--back-color);
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 1.2rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    &:focus-visible,
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

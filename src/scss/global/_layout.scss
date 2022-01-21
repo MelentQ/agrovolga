@@ -11,7 +11,7 @@
 
 .wide-container {
     width: 100%;
-    max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+    max-width: calc(var(--max-wide-container-width) + 2 * var(--wide-content-padding));
     margin: 0 auto;
     padding: 0 var(--wide-content-padding);
     @supports (width: max(20vw, 100px)) {

@@ -39,11 +39,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    &.js-init-title-animation {
-      opacity: 0;
-      transform: translate(0, 100px);
-    }
   }
 
   &__title-item {
@@ -54,11 +49,6 @@
   }
 
   &__title-icon-container {
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: flex-start;
-
-    // gap: 3rem;
     position: relative;
 
     img {
@@ -92,6 +82,13 @@
     width: fit-content;
     margin-top: 2rem;
 
+    &:hover {
+      // todo: некрасивая анимация
+      .intro__dates-row {
+        transform: translate(0, -100%);
+      }
+    }
+
     &::before {
       content: '';
 
@@ -99,7 +96,7 @@
       top: -2rem;
       left: 0;
 
-      width: calc(100vw - 2 * var(--content-padding) - 100px);
+      width: calc(100vw - 2 * var(--content-padding) - 100px - var(--sb-width));
       height: 2px;
 
       border-radius: 1px;
@@ -108,46 +105,51 @@
     }
   }
 
+  &__dates-rows {
+    position: relative;
+
+    overflow: hidden;
+  }
+
   &__dates-row {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+
+    transition: transform $base-transition-time $base-transition-easing;
+
+    &--ghost {
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
   }
 
-  &__dates {
-    flex-shrink: 0;
-
-    font-size: 5.5rem;
-    line-height: 8rem;
-    letter-spacing: -0.02em;
-    font-weight: 700;
-  }
-
-  &__month {
-    flex-shrink: 0;
-
-    font-size: 7rem;
-    line-height: 7rem;
-    letter-spacing: -0.02em;
-    font-weight: 700;
-  }
-
-  &__place {
+  &__dates-item {
     flex-shrink: 0;
 
     font-size: 4rem;
     line-height: 1;
     letter-spacing: 0;
     font-weight: 700;
-  }
 
-  &__year {
-    flex-shrink: 0;
+    & * {
+      transition: transform $base-transition-time $base-transition-easing;
+    }
 
-    font-size: 4rem;
-    line-height: 1;
-    letter-spacing: 0;
-    font-weight: 700;
+    &--num {
+      font-size: 5.5rem;
+      line-height: 8rem;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
+
+    &--text {
+      font-size: 7rem;
+      line-height: 7rem;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+    }
   }
 
   // ******
@@ -160,10 +162,6 @@
 
     max-width: calc(50% - 6rem);
     margin-right: 6rem;
-
-    &.js-init-slider-animation {
-      opacity: 0;
-    }
   }
 
   &__slider {
@@ -196,6 +194,7 @@
   &__slide {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 
     transition: opacity $base-transition-time $base-transition-easing, visibility $base-transition-time $base-transition-easing;
   }
@@ -290,6 +289,7 @@
   .swiper-slide-visible {
     opacity: 1;
     visibility: visible;
+    pointer-events: all;
   }
 
   // ******

@@ -1,16 +1,24 @@
 :root {
   --max-container-width: 130rem;
+  --max-wide-container-width: 162rem;
   --content-padding: 19rem;
   --wide-content-padding: 3rem;
   --primary-color: #C2D644;
   --primary-color-2: #70C7BF;
   --primary-color-3: #4DA1CF;
   --text-color: black;
+  --back-color: #ACBEC5;
 
   --icon-color: white; // Переназначается на ховер
   --play-button-bg-color: white; // Переназначается на ховер
   --play-button-rectangle-color: var(--primary-color); // Переназначается на ховер
   --intro-slide-padding-bottom: 0%; // fix.js
+}
+
+@media screen and (max-width: 1680px) {
+  :root {
+    --content-padding: 3rem;
+  }
 }
 
 $minWidth: 375;

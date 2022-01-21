@@ -1,0 +1,110 @@
+<section class="intro js-set-100-vh js-first-block">
+    <h1 class="visually-hidden">Международная агропромышленная выставка «Агроволга»</h1>
+    <div class="container__bg-image">
+        <picture>
+            <source srcset="img/content/index/bg/bg-1.webp" type="image/webp">
+            <img src="img/content/index/bg/bg-1.jpg" alt="Международная агропромышленная выставка Агроволга">
+        </picture>
+    </div>
+    <div class="container intro__inner">
+        <div class="intro__title-block css-animation">
+            <span class="intro__title-item">Международная</span>
+            <div class="intro__title-icon-container">
+                <img src="img/content/index/intro/tractor.svg" alt="Title Icon">
+                <span class="intro__title-item">агропромышленная</span>
+            </div>
+            <span class="intro__title-item">выставка Агроволга</span>
+        </div>
+        <div class="intro__slider-and-date">
+            {{!-- todo: доделать этот блок --}}
+            <div class="intro__dates-block">
+                <div class="intro__dates-rows">
+                    <div class="intro__dates-row">
+                        <div class="intro__dates-item intro__dates-item--num">
+                            <span>6 → 8</span>
+                        </div>
+                        <div class="intro__dates-item intro__dates-item--text">
+                            <span>июля</span>
+                        </div>
+                    </div>
+                    <div class="intro__dates-row intro__dates-row--ghost">
+                        <div class="intro__dates-item intro__dates-item--num">
+                            <span>7 → 9</span>
+                        </div>
+                        <div class="intro__dates-item intro__dates-item--text">
+                            <span>июня</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__dates-rows">
+                    <div class="intro__dates-row">
+                        <div class="intro__dates-item">
+                            <span>Казань</span>
+                        </div>
+                        <div class="intro__dates-item">
+                            <span>2022</span>
+                        </div>
+                    </div>
+                    <div class="intro__dates-row intro__dates-row--ghost">
+                        <div class="intro__dates-item">
+                            <span>Москва</span>
+                        </div>
+                        <div class="intro__dates-item">
+                            <span>2012</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__slider-block js-init-slider css-animation" data-settings="introSettings" data-delay="10000">
+                <div class="swiper slider intro__slider">
+                    <ul class="swiper-wrapper slider__wrapper intro__slider-wrapper">
+                        {{#each introSlides}}
+                        <li class="swiper-slide slider__slide intro__slide">
+                            <a class="intro__slide-link{{#if this.video}} js-open-video-modal{{/if}}" href="#"{{#if this.video}} data-hystmodal="#video-modal" data-video-code="{{this.video}}"{{/if}}>
+                                <div class="intro__slide-inner">
+                                    {{#if this.video}}
+                                    <div class="js-youtube-player" data-video-code="{{this.video}}"></div>
+                                    <div class="intro__slide-video-icon">
+                                        <svg><use xlink:href="#play-video"></svg>
+                                    </div>
+                                    {{else if this.previewPic}}
+                                    <picture>
+                                        <source srcset="{{this.previewPicWebP}}" type="image/webp">
+                                        <img src="{{this.previewPic}}" alt="{{this.title}}">
+                                    </picture>
+                                    {{/if}}
+                                </div>
+                                <h3 class="intro__slide-title">{{this.title}}</h3>
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <div class="slider__btns slider__btns--vertical intro__slider-btns">
+                    <button class="slider__btn slider__btn--prev js-init-slider-btn-prev" type="button" title="Назад">
+                        <svg><use xlink:href="#slider-prev"></svg>
+                    </button>
+                    <button class="slider__btn slider__btn--next js-init-slider-btn-next" type="button" title="Вперёд">
+                        <svg><use xlink:href="#slider-next"></svg>
+                    </button>
+                </div>
+
+                <script>
+                    const introSettings = {
+                        slidesPerView: 2,
+                        spaceBetween: 18,
+                        watchSlidesProgress: true
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="wide-container intro__contacts-block">
+        <a class="intro__contact-phone" href="tel:89876543210">
+            <svg><use xlink:href="#phone"></svg>
+            <span>Связаться</span>
+        </a>
+        {{>socials}}
+    </div>
+</section>
