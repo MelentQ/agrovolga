@@ -127,7 +127,7 @@
                         </picture>
                     </div>
                     <div class="container intro__inner">
-                        <div class="intro__title-block js-init-title-animation">
+                        <div class="intro__title-block css-animation">
                             <span class="intro__title-item">Международная</span>
                             <div class="intro__title-icon-container">
                                 <img src="img/content/index/intro/tractor.svg" alt="Title Icon">
@@ -137,16 +137,44 @@
                         </div>
                         <div class="intro__slider-and-date">
                             <div class="intro__dates-block">
-                                <div class="intro__dates-row">
-                                    <span class="intro__dates">6 → 8</span>
-                                    <span class="intro__month">июля</span>
+                                <div class="intro__dates-rows">
+                                    <div class="intro__dates-row">
+                                        <div class="intro__dates-item intro__dates-item--num">
+                                            <span>6 → 8</span>
+                                        </div>
+                                        <div class="intro__dates-item intro__dates-item--text">
+                                            <span>июля</span>
+                                        </div>
+                                    </div>
+                                    <div class="intro__dates-row intro__dates-row--ghost">
+                                        <div class="intro__dates-item intro__dates-item--num">
+                                            <span>7 → 9</span>
+                                        </div>
+                                        <div class="intro__dates-item intro__dates-item--text">
+                                            <span>июня</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="intro__dates-row">
-                                    <span class="intro__place">Казань</span>
-                                    <span class="intro__year">2022</span>
+                                <div class="intro__dates-rows">
+                                    <div class="intro__dates-row">
+                                        <div class="intro__dates-item">
+                                            <span>Казань</span>
+                                        </div>
+                                        <div class="intro__dates-item">
+                                            <span>2022</span>
+                                        </div>
+                                    </div>
+                                    <div class="intro__dates-row intro__dates-row--ghost">
+                                        <div class="intro__dates-item">
+                                            <span>Москва</span>
+                                        </div>
+                                        <div class="intro__dates-item">
+                                            <span>2012</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="intro__slider-block js-init-slider js-init-slider-animation" data-settings="introSettings" data-delay="10000">
+                            <div class="intro__slider-block js-init-slider css-animation" data-settings="introSettings" data-delay="10000">
                                 <div class="swiper slider intro__slider">
                                     <ul class="swiper-wrapper slider__wrapper intro__slider-wrapper">
                                         <li class="swiper-slide slider__slide intro__slide">
@@ -310,6 +338,15 @@
                     players.forEach(playerElement => {
                         player = new YT.Player(playerElement, {
                             videoId: playerElement.dataset.videoCode,
+                            playerVars: {
+                                'modestbranding': 1,
+                                'autoplay': 0,
+                                'controls': 0,
+                                'rel': 0,
+                                'showinfo': 0,
+                                'disablekb': 0,
+                                'mute': 1
+                            },
                             events: {
                                 'onReady': onPlayerReady,
                                 'onStateChange': onStateChange

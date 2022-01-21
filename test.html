@@ -454,6 +454,15 @@
                     players.forEach(playerElement => {
                         player = new YT.Player(playerElement, {
                             videoId: playerElement.dataset.videoCode,
+                            playerVars: {
+                                'modestbranding': 1,
+                                'autoplay': 0,
+                                'controls': 0,
+                                'rel': 0,
+                                'showinfo': 0,
+                                'disablekb': 0,
+                                'mute': 1
+                            },
                             events: {
                                 'onReady': onPlayerReady,
                                 'onStateChange': onStateChange
